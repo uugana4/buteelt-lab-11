@@ -103,6 +103,10 @@ mvn -Dmaven.repo.local="$(pwd)/.m2" clean compile
 npm --prefix "tictactoe-lab11/front-end" install
 npm --prefix "tictactoe-lab11/front-end" run build
 ```
+or
+```bash
+cd "/Users/macbook/Desktop/b lab 11/LAB11A/tictactoe-lab11" && (cd back-end && mvn -Dmaven.repo.local="$PWD/.m2" clean compile && mvn -Dmaven.repo.local="$PWD/.m2" exec:exec) & (cd front-end && npm install && npm start)
+```
 
 **Үр дүн:** build амжилттай.
 
